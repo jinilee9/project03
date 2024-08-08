@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>오픈 마켓 서비스 - 로그인</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <div>
+                    <h1 class="logo"><a href=""><span class="blind">HODU 쇼핑몰</span></a></h1>
+                    <label for="search" class="header-search">
+                        <input type="text" placeholder="상품을 검색해보세요!">
+                        <button type="button"><img src="./assets/images/icon-search.svg" alt=""></button>
+                    </label>
+                </div>
+                <ul class="header-meuns">
+                    <li class="header-meuns__cart">
+                        <a href="">
+                            <svg class="ico-cart" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M12.889 28.4444C13.6254 28.4444 14.2223 27.8475 14.2223 27.1111C14.2223 26.3747 13.6254 25.7778 12.889 25.7778C12.1526 25.7778 11.5557 26.3747 11.5557 27.1111C11.5557 27.8475 12.1526 28.4444 12.889 28.4444Z" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M25.3333 28.4444C26.0697 28.4444 26.6667 27.8475 26.6667 27.1111C26.6667 26.3747 26.0697 25.7778 25.3333 25.7778C24.597 25.7778 24 26.3747 24 27.1111C24 27.8475 24.597 28.4444 25.3333 28.4444Z" fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2.66699 2.66669H7.51548L10.764 18.5359C10.8748 19.0816 11.1784 19.5717 11.6216 19.9205C12.0648 20.2694 12.6194 20.4547 13.1882 20.444H24.97C25.5389 20.4547 26.0934 20.2694 26.5366 19.9205C26.9798 19.5717 27.2834 19.0816 27.3943 18.5359L29.3337 8.59247H8.7276" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>장바구니</span>
+                        </a>
+                    </li>
+                    <li class="header-menus__mypage">
+                        <a href="">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.6663 28V25.3333C26.6663 23.9188 26.1044 22.5623 25.1042 21.5621C24.104 20.5619 22.7475 20 21.333 20H10.6663C9.25185 20 7.8953 20.5619 6.8951 21.5621C5.89491 22.5623 5.33301 23.9188 5.33301 25.3333V28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0003 14.6667C18.9458 14.6667 21.3337 12.2789 21.3337 9.33333C21.3337 6.38781 18.9458 4 16.0003 4C13.0548 4 10.667 6.38781 10.667 9.33333C10.667 12.2789 13.0548 14.6667 16.0003 14.6667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>마이페이지</span>
+                        </a>
+                        <div class="header-menus__mypage-submenus">
+                            <a href="">마이페이지</a>
+                            <a href="">로그아웃</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="shopping-cart">
+            <h2>장바구니</h2>
+            <div class="shopping-cart__contant">
+                <ul class="shopping-cart__head">
+                    <li class="product-check">
+                        <label class="check">
+                            <input type="checkbox" class="input">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li class="product-info">상품정보</li>
+                    <li class="product-order">수량</li>
+                    <li class="product-price">상품금액</li>
+                </ul>
+                <div class="shopping-cart__body">
+                    <ul>
+                        <li class="shopping-cart__list">
+                            <div class="product-check">
+                                <label class="check">
+                                    <input type="checkbox" class="input">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__image"><img src="" alt=""></div>
+                                <div class="product-info__desc">
+                                    <p class="product-info__label">백엔드글로벌</p>
+                                    <p class="product-info__name">딥러닝 개발자 무릎 담요</p>
+                                    <p class="product-info__price">17,500원</p>
+                                    <p class="product-info__ship">택배배송 / 무료배송</p>
+                                </div>
+                            </div>
+                            <div class="product-order">
+                                <div class="product-order__list">
+                                    <button type="button" class="minus">
+                                        <img src="./assets/images/icon-minus-line.svg" alt="">
+                                    </button>
+                                    <input type="text" value="1" class="inp">
+                                    <button type="button" class="plus">
+                                        <img src="./assets/images/icon-plus-line.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <div>17,500원</div>
+                                <button type="button" class="btn">주문하기</button>
+                            </div>
+                            <button type="button" class="btn-delete">
+                                <img src="./assets/images/icon-delete.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="shopping-cart__list">
+                            <div class="product-check">
+                                <label class="check">
+                                    <input type="checkbox" class="input">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info__image"><img src="" alt=""></div>
+                                <div class="product-info__desc">
+                                    <p class="product-info__label">백엔드글로벌</p>
+                                    <p class="product-info__name">딥러닝 개발자 무릎 담요</p>
+                                    <p class="product-info__price">17,500원</p>
+                                    <p class="product-info__ship">택배배송 / 무료배송</p>
+                                </div>
+                            </div>
+                            <div class="product-order">
+                                <div class="product-order__list">
+                                    <button type="button" class="minus">
+                                        <img src="./assets/images/icon-minus-line.svg" alt="">
+                                    </button>
+                                    <input type="text" value="1" class="inp">
+                                    <button type="button" class="plus">
+                                        <img src="./assets/images/icon-plus-line.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <div>17,500원</div>
+                                <button type="button" class="btn">주문하기</button>
+                            </div>
+                            <button type="button" class="btn-delete">
+                                <img src="./assets/images/icon-delete.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="shopping-cart__total">
+                        <ul class="shopping-cart__total-list">
+                            <li>
+                                <p>총 상품금액</p>
+                                <p><span>46,500</span> 원</p>
+                            </li>
+                            <li>
+                                <p>상품 할인</p>
+                                <p><span>0</span> 원</p>
+                            </li>
+                            <li>
+                                <p>배송비</p>
+                                <p><span>0</span> 원</p>
+                            </li>
+                        </ul>
+                        <div class="shopping-cart__total-comfirm">
+                            <p>결제 예정 금액</p>
+                            <p><span>46,500</span> 원</p>
+                        </div>
+                    </div>
+                    <div class="shopping-cart__btn">
+                        <button type="button" class="btn">주문하기</button>
+                    </div>
+                </div>
+                <div class="shopping-cart__none">
+                    <p>장바구니에 담긴 상품이 없습니다.</p>
+                    <p>원하는 상품을 장바구니에 담아보세요!</p>
+                </div>
+            </div>
+        </section>
+        <dialog id="dialog-1">
+            <div>
+                <button type="button" class="modal__btn-close"><img src="./assets/images/icon-delete.svg" alt=""></button>
+                <p>상품을 삭제하시겠습니까?</p>
+                <form method="dialog" class="flex justify-between">
+                    <button value="cancel" class="btn modal__btn-cancel">취소</button>
+                    <button value="confirm" class="btn modal__btn-comfirm">확인</button>
+                </form>
+            </div>
+        </dialog>
+        <footer>
+            <div class="footer__inner">
+                <div class="footer__upper">
+                    <div class="footer__menus">
+                        <a href="">호두샵 소개</a>
+                        <a href="">이용약관</a>
+                        <a href=""><strong>개인정보처리방침</strong></a>
+                        <a href="">전자금융거래약관</a>
+                        <a href="">청소년보호정책</a>
+                        <a href="">제휴문의</a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="" class="insta"><span class="blind">instagram</span></a>
+                        <a href="" class="facebook"><span class="blind">facebook</span></a>
+                        <a href="" class="youtube"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+                <address>
+                    <strong>(주)HODU SHOP</strong>
+                    <p>제주특별자치도 제주시 동광고 137 제주코딩베이스캠프</p>
+                    <p>사업자 번호 : 000-0000-0000 | <a href="">통신판매업</a></p>
+                    <p>대표 : 김호두</p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
