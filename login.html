@@ -19,18 +19,18 @@
                     <label for="tab-2">판매회원 로그인</label>
                 </div>
                 <div class="tabs__body">
-                    <form action="">
-                        <input type="text" placeholder="아이디">
-                        <input type="password" placeholder="비밀번호">
+                    <form action="" id="loginForm">
+                        <input type="text" placeholder="아이디" id="id" required>
+                        <input type="password" placeholder="비밀번호" id="pw" required>
                         <p class="tabs__info">아이디 또는 비밀번호가 일치하지 않습니다.</p>
-                        <button type="submit">로그인</button>
+                        <button type="submit" id="loginBtn">로그인</button>
                     </form>
                 </div>
                 <div class="tabs__body">
                     <form action="">
                         <input type="text" placeholder="아이디">
                         <input type="password" placeholder="비밀번호">
-                        <p class="tabs__info">아이디 또는 비밀번호가 일치하지 않습니다.</p>
+                        <p class="tabs__info" id="loginMsg">아이디 또는 비밀번호가 일치하지 않습니다.</p>
                         <button type="submit">로그인</button>
                     </form>
                 </div>
@@ -65,5 +65,6 @@
                 </address>
             </div>
         </footer>
+        <script type="text/javascript" src="assets/js/common.js"></script>
     </body>
 </html>

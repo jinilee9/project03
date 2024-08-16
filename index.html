@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>오픈 마켓 서비스 - 로그인</title>
+        <title>오픈 마켓 서비스 - 제품리스트</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/layout.css">
     </head>
@@ -13,7 +13,7 @@
                 <div>
                     <h1 class="logo"><a href=""><span class="blind">HODU 쇼핑몰</span></a></h1>
                     <label for="search" class="header-search">
-                        <input type="text" placeholder="상품을 검색해보세요!">
+                        <input type="text" placeholder="상품을 검색해보세요!" id="search">
                         <button type="button"><img src="./assets/images/icon-search.svg" alt=""></button>
                     </label>
                 </div>
@@ -50,46 +50,6 @@
         <section class="shopping">
             <h2 class="blind">쇼핑아이템 목록</h2>
             <ul class="shopping-list products">
-                <li class="products__list">
-                    <a href="">
-                        <div class="products-img"><img src="" alt=""></div>
-                        <div>
-                            <p class="products-label">우당탕탕 라이캣의 실험실</p>
-                            <p class="products-name">Hack Your Life 개발자 노트북 파우치</p>
-                            <p class="product-price"><span>29,000</span>원</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="products__list">
-                    <a href="">
-                        <div class="products-img"><img src="" alt=""></div>
-                        <div>
-                            <p class="products-label">우당탕탕 라이캣의 실험실</p>
-                            <p class="products-name">Hack Your Life 개발자 노트북 파우치</p>
-                            <p class="product-price"><span>29,000</span>원</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="products__list">
-                    <a href="">
-                        <div class="products-img"><img src="" alt=""></div>
-                        <div>
-                            <p class="products-label">우당탕탕 라이캣의 실험실</p>
-                            <p class="products-name">Hack Your Life 개발자 노트북 파우치</p>
-                            <p class="product-price"><span>29,000</span>원</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="products__list">
-                    <a href="">
-                        <div class="products-img"><img src="" alt=""></div>
-                        <div>
-                            <p class="products-label">우당탕탕 라이캣의 실험실</p>
-                            <p class="products-name">Hack Your Life 개발자 노트북 파우치</p>
-                            <p class="product-price"><span>29,000</span>원</p>
-                        </div>
-                    </a>
-                </li>
             </ul>
         </section>
         <footer>
@@ -117,5 +77,6 @@
                 </address>
             </div>
         </footer>
+        <script type="text/javascript" src="assets/js/shoppingList.js"></script>
     </body>
 </html>
