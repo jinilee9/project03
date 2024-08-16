@@ -86,7 +86,7 @@ header{
     align-items: center;
 }
 .logo{
-    background: url(../images/logo-hodu.png) no-repeat center center / 100%;
+    background: url(/assets/images/logo-hodu.png) no-repeat center center / 100%;
     width: 124px;
     height: 38px;
     margin-right: 3rem;
